@@ -1,0 +1,171 @@
+/* Colors variables */
+:root {
+    --main: #b2e353;
+    --scuro: #222222;
+    --scuretto: #303030;
+    --white: #f1f1f1;
+    --p1Main: #9bc1bc;
+    --p2Main: #ed6a5a;
+}
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* General style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--scuro);
+    color: var(--scuro);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--scuretto);
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.titleGradient {
+    font-weight: bold;
+    background-color: var(--main);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+/* Player Container */
+.player-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.playerInfo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.playerInfo div {
+    position: absolute;
+    text-align: center;
+}
+
+.playerPic {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--scuretto);
+    overflow: hidden;
+    z-index: 1;
+}
+
+#playerPicP1 {
+    border-color: var(--p1Main);
+}
+
+#playerPicP2 {
+    border-color: var(--p2Main);
+    transform: scaleX(-1);
+}
+
+.twist-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--scuretto);
+}
+
+.twist {
+    background-color: var(--main);
+    border-radius: 50%;
+    border: 4px solid var(--white);
+}
+
+.enTwist i {
+    font-size: 3em;
+    color: var(--white);
+    transition: transform 0.3s ease;
+}
+
+.enTwist i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Sectors */
+.svg-container {
+    background-color: var(--scuretto);
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.svg-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sector {
+    pointer-events: auto;
+}
+
+.sector:hover {
+    fill: #e2f4be;
+    cursor: pointer;
+}

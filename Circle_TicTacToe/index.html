@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>TicTacToe TWIST</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styleS.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="styles/styleM.css" media="only screen and (min-width: 601px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="styles/styleL.css" media="only screen and (min-width: 1024px)">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Script -->
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>TIC-TAC-TOE<a class="titleGradient">TWIST</a></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="player-container p1">
+            <div class="playerPic" id="playerPicP1"></div>
+            <div class="playerInfo">
+                <div>
+                    <h2>Player 1</h2>
+                    <p>Score: <span id="playerScoreP1">0</span></p>
+                </div>
+            </div>
+            <div class="twist-container">
+                <div class="enTwist" id="enableTwistP1"><i class="fa-solid fa-rotate-right"></i></div>
+                <div class="twist" id="twist-1"></div>
+                <div class="twist" id="twist-2"></div>
+                <div class="twist" id="twist-3"></div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="svg-container">
+                <svg id="ring-1" width="500" height="500" viewBox="0 0 500 500"></svg>
+                <svg id="ring-2" width="500" height="500" viewBox="0 0 500 500"></svg>
+                <svg id="ring-3" width="500" height="500" viewBox="0 0 500 500"></svg>
+                <svg id="ring-4" width="500" height="500" viewBox="0 0 500 500"></svg>
+            </div>
+        </div>
+
+        <div class="player-container p2">
+            <div class="playerPic" id="playerPicP2"></div>
+            <div class="playerInfo">
+                <div>
+                    <h2>Player 2</h2>
+                    <p>Score: <span id="playerScoreP2">0</span></p>
+                </div>
+            </div>
+            <div class="twist-container">
+                <div class="enTwist" id="enableTwistP2"><i class="fa-solid fa-rotate-right"></i></div>
+                <div class="twist" id="twist-1"></div>
+                <div class="twist" id="twist-2"></div>
+                <div class="twist" id="twist-3"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

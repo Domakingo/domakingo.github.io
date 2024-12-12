@@ -1,0 +1,66 @@
+/* Styles specific to medium screens (min-width: 601px and max-width: 1023px) */
+body {
+    font-size: 16px;
+}
+
+main {
+    flex-direction: column;
+    width: 90%;
+}
+
+.titleGradient {
+    font-size: 1.8em;
+}
+
+/* Game container */
+.svg-container,
+.game-container {
+    max-width: 400px;
+}
+
+/* Players */
+.player-container {
+    max-width: 250px;
+    min-width: 235px;
+}
+
+.playerInfo {
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5vmax 5vmax 1vmax 1vmax;
+    height: 30%;
+}
+
+.playerInfo div {
+    font-size: 20px;
+}
+
+.playerPic {
+    border-width: 6px;
+    width: 100px;
+    height: 100px;
+}
+
+#playerPicP1 {
+    top: 20%;
+    left: -10%;
+}
+
+#playerPicP2 {
+    top: 20%;
+    right: -10%;
+}
+
+/* Twists */
+.twist-container {
+    gap: 10px;
+}
+
+.twist {
+    width: 35px;
+    height: 35px;
+}
+
+.enTwist i {
+    font-size: 2.5em;
+}

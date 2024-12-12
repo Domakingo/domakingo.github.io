@@ -1,0 +1,70 @@
+/* Styles specific to small screens (max-width: 600px) */
+body {
+    font-size: 14px;
+}
+
+main {
+    flex-direction: column;
+    max-height: 90%;
+}
+
+.titleGradient {
+    font-size: 1.5em;
+}
+
+/* Game container */
+.svg-container,
+.game-container {
+    max-width: 350px;
+}
+
+/* Players */
+.player-container {
+    max-width: 200px;
+}
+
+.playerInfo {
+    flex-direction: row;
+    justify-content: center;
+    height: 25%;
+    border-radius: 4vmax;
+    border-radius: 5vmax 5vmax 1vmax 1vmax;
+}
+
+.playerInfo div {
+    font-size: 10px;
+}
+
+.playerPic {
+    border-width: 4px;
+    width: 75px;
+    height: 75px;
+}
+
+#playerPicP1 {
+    top: 20%;
+    left: -10%;
+}
+
+#playerPicP2 {
+    top: 20%;
+    right: -10%;
+}
+
+/* Twists */
+.twist-container {
+    gap: 5px;
+}
+
+.twist {
+    width: 30px;
+    height: 30px;
+}
+
+.p1 .twist-container {
+    flex-direction: row-reverse;
+}
+
+.enTwist i {
+    font-size: 2.5em;
+}
