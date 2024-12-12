@@ -1,7 +1,5 @@
 # TicTacToeTWIST: TicTacToe with a... TWIST!
 
----
-
 ## 🎨 Inspiration
 
 The concept for this game was inspired by the circular Tic-Tac-Toe design featured on this site: [Circle Tic-Tac-Toe by MathEqualsLove](https://mathequalslove.net/circle-tic-tac-toe/).
